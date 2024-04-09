@@ -50,28 +50,47 @@
     <link rel="stylesheet" href="css/customCSS.css">
 </head>
 <nav>
-    <a href=https://hello.mamamia.com/ target="_blank">
-        <svg class="w-9" viewBox="0 0 969 955" fill="none" xmlns="http://www.w3.org/2000/svg">
-        </svg>
-    </a>
+    <header class="border-b border-gray-300 py-4">
+        <nav class="" x-data="{navbarOpen:false}">
+            <div class="container flex flex-wrap px-4 py-2 mx-auto flex items-center justify-between lg:space-x-4">
+                <img src="/images/favicon.png" class="left-0 top-0 w-12 h-12" alt="">
+                <button class="lg:hidden inline-flex items-center justify-center w-10 h-10 ml-auto text-black border rounded-md outline-none lg:hidden focus:outline-none"
+                        @click="navbarOpen = !navbarOpen">
+                </button>
+                <div class="flex items-center">
+                    <!-- language svg -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-globe-americas" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"/>
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                    </svg>
+                    Language:
+                    <select class="ml-2 text-gray-800 text-sm" id="language">
+                        <option value="en" selected>English</option>
+                        <option value="zh-hans">简体中文</option>
+                        <option value="zh-hant">繁體中文</option>
+                        <option value="ja">日本語</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
 </nav>
 <main>
     <section>
         <div class="fixed">
-            <img src="https://fastly.picsum.photos/id/310/1920/1080.jpg?hmac=HDJM8ptvuyfahXPE6mcsYhG1XGE1mUb2oaa4hlFZ0yg"
+            <img src="images/landing/section-1.jpg"
                  alt="">
             <div class="content">
-                <h1>Scroll and see.</h1>
-                <p>The magic of CSS scroll-driven animation to power a landing page. No JavaScript harmed. Animation
-                    runs off the main thread. Chain them and make use of fixed elements.</p>
+                <h1>Scroll and start your journey.</h1>
+                <p>Scroll down to see the world of Mama Mia.</p>
             </div>
         </div>
     </section>
     <section>
         <article>
             <div class="fixed">
-                <img src="https://fastly.picsum.photos/id/846/1920/1080.jpg?hmac=rx55XDjKPLjmW5WdHBRqOphU4wZkLT5W3TC_WBdvyVY"
-                     alt="">
+                <img src="images/landing/section-2.jpg" alt="">
             </div>
             <div class="static">
                 <div class="content">
@@ -87,13 +106,14 @@
             <div class="fixed"></div>
             <div class="static">
                 <div class="content">
-                    <h2>Do stuff with code.<br/>Mess about and find out.</h2>
+                    <h2>
+                        <br/></h2>
                 </div>
             </div>
         </article>
         <article>
             <div class="fixed">
-                <img src="https://fastly.picsum.photos/id/985/1920/1080.jpg?hmac=dLb_5lBJW4AZhZDUXweY5WlrnscpKLtCKffaqSrF9Vw"
+                <img src="images/landing/section3.jpg"
                      alt="">
             </div>
             <div class="static">
@@ -122,7 +142,9 @@
                 <img src="https://fastly.picsum.photos/id/681/1920/1080.jpg?hmac=qyb0NfTEkQw9QdsIYQbV0GhAEyKiPcAfetmIF_e8Kik"
                      alt=""/>
                 <div class="content">
-                    <h2>Fin.<br>Follow for more.</h2>
+                    <h2>continue the journey.</br>
+                        Clink to <a href="menu.html">menu</a> to see more.
+                    </h2>
                 </div>
             </div>
             <!-- <div class="static">
@@ -132,5 +154,16 @@
                 </div> -->
         </article>
     </section>
+    <footer class="bg-gray-900 text-gray-500 px-10">
+        <div class="w-full bg-gray-900 text-gray-500 px-10">
+            <div class="container mx-auto px-4 py-6 text-center">
+                <p>
+                    Copyright © 2024
+                    <a target="_blank" href="https://www.mamamia.com">Mama Mia</a>
+                    All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
 </main>
 </html>
