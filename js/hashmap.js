@@ -30,4 +30,9 @@ class Hashmap {
     clear() {
         this.map.clear();
     }
+
+    // search key in hashmap and return value
+    search(key) {
+        return this.map.get(key);
+    }
 }

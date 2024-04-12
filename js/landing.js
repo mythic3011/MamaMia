@@ -45,6 +45,17 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Retrieve the saved language from local storage
+const savedLanguage = localStorage.getItem("language");
+
+// Set the selected language in the dropdown
+const languageSelect = document.getElementById("language");
+if (savedLanguage) {
+    languageSelect.value = savedLanguage;
+}
+
+// Call the changeLanguage function when the page loads
+changeLanguage(languageSelect);
 // Third section animations
 const thirdSectionFixed = document.querySelector('section:nth-of-type(3) .fixed');
 thirdSectionFixed.style.clipPath = 'ellipse(220% 200% at 50% 0%)';
@@ -59,4 +70,6 @@ window.addEventListener('scroll', () => {
         thirdSectionFixed.style.transform = `scale(${scale})`;
     }
 });
+
+
 
