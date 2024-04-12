@@ -1,46 +1,47 @@
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 1rem;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 1rem;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
 }
 
 nav img {
-    width: 48px;
-    height: 48px;
+	width: 48px;
+	height: 48px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 nav a:hover img {
-    filter: brightness(0.5);
+	filter: brightness(0.5);
 }
 
 nav a:hover:after {
-    content: "";
-    position: absolute;
-    inset: 0;
+	content: "";
+	position: absolute;
+	inset: 0;
 }
 
 nav a:hover:after {
-    content: "";
-    position: absolute;
-    inset: 0;
+	content: "";
+	position: absolute;
+	inset: 0;
 }
 
 nav a:hover img {
-    filter: brightness(0.5);
+	filter: brightness(0.5);
 }
+
 
 
 @font-face {
@@ -652,8 +653,8 @@ article-a:hover:after {
 }
 
 .border-b {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 4px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
 }
 
 header nav {
@@ -664,338 +665,52 @@ header nav {
 }
 
 header nav > div {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4px;
-    margin: auto;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+  margin: auto;
+  justify-content: space-between;
 }
 
 header nav > div > a {
-    display: block;
-    margin-top: 4px;
-    transition: all 0.2s ease-in-out;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    padding: 8px;
+  display: block;
+  margin-top: 4px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 8px;
 }
 
 header nav > div > a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 header nav > div > a > img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 48px;
-    height: 48px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
 }
 
 header nav > div > div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header nav > div > div > svg {
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 header nav > div > div > span {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 header nav > div > div > select {
-    margin-left: 8px;
-    color: #333;
-    font-size: 14px;
-}
-
-
-/* firefox */
-@-moz-document url-prefix() {
-    header nav > div > div > select {
-        margin-left: 8px;
-        color: #333;
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 640px) {
-    header nav > div > div > select {
-        margin-left: 8px;
-        color: #333;
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 1024px) {
-    header nav > div > div > select {
-        margin-left: 8px;
-        color: #333;
-        font-size: 14px;
-
-    }
-
-    .section-1-title .article-4-h2 .article-4-h2 {
-        font-size: 5.25px;
-        display: inline-block;
-        margin: 0;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-top: 1rem;
-        border-radius: 0.5rem;
-        border-width: 2px;
-        border-color: transparent;
-        text-align: left;
-        text-align: center;
-        color: #ffffff;
-        transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 300ms;
-        transition-duration: 200ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        h1, h2 {
-            display: inline-block;
-            margin: 0;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            margin-top: 1rem;
-            border-radius: 0.5rem;
-            border-width: 2px;
-            border-color: transparent;
-            border-style: solid;
-            text-align: left;
-            text-align: center;
-            color: #ffffff;
-            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 300ms;
-            transition-duration: 200ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        @media (min-width: 640px) {
-            font-size: 3rem;
-            line-height: 1;
-        }
-
-        @media (min-width: 1024px) {
-            font-size: 3.75rem;
-            line-height: 1;
-        }
-    }
-}
-
-/* firefox animation */
-@supports (animation-timeline: scroll()) {
-    @media (prefers-reduced-motion: no-preference) {
-        article {
-            view-timeline: --article;
-        }
-
-        .fixed {
-            position: fixed;
-            inset: 0;
-        }
-
-        .static {
-            position: absolute;
-            inset: 0;
-            z-index: 6;
-        }
-
-        .filler {
-            display: block;
-            width: 100%;
-            position: absolute;
-            bottom: 30vh;
-            padding: 1rem;
-        }
-
-        .text-blocks p {
-            animation: slide-in, fade-in;
-            animation-fill-mode: both;
-            animation-timing-function: linear;
-            animation-timeline: --article;
-        }
-
-        .text-blocks p:nth-of-type(1) {
-            animation-range: entry-crossing 50% entry-crossing 55%;
-        }
-
-        .text-blocks p:nth-of-type(2) {
-            animation-range: entry-crossing 55% entry-crossing 60%;
-        }
-
-        .text-blocks p:nth-of-type(3) {
-            animation-range: entry-crossing 60% entry-crossing 65%;
-        }
-
-        .text-blocks p:nth-of-type(4) {
-            animation-range: entry-crossing 65% entry-crossing 70%;
-        }
-
-        .text-blocks p:nth-of-type(5) {
-            animation-range: entry-crossing 70% entry-crossing 75%;
-        }
-
-        section:nth-of-type(2) article:last-of-type {
-            z-index: 5;
-        }
-
-        section:nth-of-type(2) article:nth-of-type(3) {
-            height: 400vh;
-        }
-
-        section:nth-of-type(2) article:nth-of-type(3) h2 {
-            margin-top: 80vh;
-        }
-
-        section:nth-of-type(2) article:last-of-type .fixed {
-            clip-path: ellipse(220% 200% at 50% 300%);
-            animation: unclip both linear;
-            animation-timeline: --article;
-            animation-range: entry 20% entry 80%;
-        }
-
-        .filler h2 {
-            animation: fade-away, fade-out;
-            animation-timing-function: linear;
-            animation-fill-mode: both;
-            animation-timeline: --article;
-            animation-range: exit 40% exit 75%, exit 70% exit 90%;
-        }
-
-        .loud-wrap {
-            clip-path: inset(0 0 0 0);
-            animation: unmask both linear;
-            animation-timeline: --article;
-            animation-range: entry 20% entry 80%;
-            mask: linear-gradient(white 50%, transparent) 0 100% / 100% 200% no-repeat;
-        }
-
-        .text-wrap {
-            position: sticky;
-            bottom: 4rem;
-            transform-origin: 50% 0;
-            animation: fade-away both linear, fade-out both linear;
-            animation-timeline: --article;
-            animation-range: exit 40% exit 75%, exit 70% exit 100%;
-        }
-
-        .text-blocks {
-            animation: fade-out both linear;
-            animation-timeline: --article;
-            animation-range: entry-crossing 75% entry-crossing 100%;
-        }
-
-        section:nth-of-type(2) article:nth-of-type(3) .fixed {
-            animation: fade-in both linear, fade-out both linear;
-            animation-timeline: --article, --article;
-            animation-range: entry 45% exit-crossing 0%, exit 0% exit 15%;
-        }
-
-        section:nth-of-type(2) article:nth-of-type(2) .fixed {
-            animation: fade-in;
-            animation-fill-mode: both;
-            animation-timing-function: linear;
-            animation-timeline: --article;
-            animation-range: entry 60% exit 30%;
-        }
-
-        section:nth-of-type(2) article:nth-of-type(2) h2 {
-            animation: slide-in, fade-in, fade-away, fade-out;
-            animation-fill-mode: both;
-            animation-timing-function: linear;
-            animation-timeline: view(), view(), --article, --article;
-            animation-range: entry 100% cover 25%, entry 100% cover 35%, exit 20% exit 40%, exit 40% exit 50%;
-        }
-
-        section:nth-of-type(2) article:first-of-type h2 {
-            animation: slide-up both linear;
-            animation-timeline: --article;
-            animation-range: entry 20% entry 80%;
-        }
-
-        section:nth-of-type(2) article:first-of-type img {
-            animation: scale-down both linear;
-            animation-timeline: --article;
-            animation-range: entry;
-        }
-
-        section:nth-of-type(2) article:first-of-type .fixed {
-            clip-path: ellipse(220% 200% at 50% 300%);
-            animation: unclip both linear;
-            animation-timeline: --article;
-            animation-range: entry 0 entry 100%;
-        }
-
-        section:first-of-type {
-            view-timeline: --section;
-        }
-
-        section:first-of-type .fixed {
-            animation: scale-and-move both linear, fade-out both linear;
-            animation-timeline: --section;
-            animation-range: exit 0% exit 50%, exit 0% exit 25%;
-            transform-origin: 50% 0;
-        }
-
-        /* Keyframes collection	*/
-        @keyframes slide-in {
-            0% {
-                translate: 0 100%;
-            }
-        }
-
-        @keyframes fade-in {
-            0% {
-                opacity: 0;
-            }
-        }
-        @keyframes slide-up {
-            0% {
-                translate: 0 100%;
-            }
-        }
-        @keyframes fade-away {
-            to {
-                filter: blur(4rem);
-            }
-        }
-        @keyframes unmask {
-            to {
-                mask-position: 0 0;
-            }
-        }
-        @keyframes scale-down {
-            0% {
-                scale: 5;
-            }
-        }
-        @keyframes unclip {
-            to {
-                clip-path: ellipse(220% 200% at 50% 175%);
-            }
-        }
-        @keyframes fade-out {
-            to {
-                opacity: 0;
-            }
-        }
-        @keyframes scale-and-move {
-            to {
-                translate: 0 -10%;
-                scale: 0.35 0.5;
-            }
-        }
-    }
+  margin-left: 8px;
+  color: #333;
+  font-size: 14px;
+  /* Add any other desired styles for the select dropdown */
 }
