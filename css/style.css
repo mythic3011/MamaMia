@@ -113,7 +113,7 @@
     list-style-type: none;
 }
 
-.a {
+.a btn:hover {
     display: block;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
