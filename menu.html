@@ -370,8 +370,15 @@
                 </div>
                 <form>
                     <label>
-                        <input type="email" placeholder="example@example.com"/>
-                        <button id="newsletter-subscribe">Subscribe</button>
+                        <input type="email"
+                               placeholder="example@example.com"
+                               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                               title="Please enter a valid email address.">
+                        <button
+                                id="newsletter-subscribe"
+                        >
+                            Subscribe
+                        </button>
                     </label>
                 </form>
             </div>
