@@ -26,6 +26,8 @@
     <!-- Multi-Language javascript on page -->
     <script src="js/multi-language.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/contact.js"></script>
     <!-- style.css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Menu.css">
@@ -36,10 +38,9 @@
     <nav>
         <div class="header-div-1">
             <a href="index.html" class="header-div-a">
-                <img src="/images/favicon.png" class="header-div-a-img" alt="">
+                <img src="images/favicon.png" class="header-div-a-img" alt="">
             </a>
-            <div class="header-div-2"
-                 :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+            <div class="header-div-2">
                 <ul class="header-div-2-ul">
                     <li>
                         <a id="navbar-home"
@@ -87,25 +88,24 @@
                 <h1 id="contact-title" class="contact-form-title">Contact Us</h1>
                 <p class="contact-p" id="contact-description">
                     We're always looking for ways to improve our services and create a better experience for our
-                    customers.</br>
+                    customers.
                     If you have any questions or suggestions, please don't hesitate to reach out to us.
                 </p>
             </div>
         </div>
         <div class="section-list">
-            <h2 id="contact-title-form" class="contact-form-title" style="text-align: center; display: block">Send us a message</h2>
+            <h2 id="contact-title-form" class="contact-form-title" style="text-align: center; display: block">Send us a
+                message</h2>
             <form id="contact-form-full" class="contact-form" onsubmit="PrintFormSubmitMessage()">
-                <input type="text" id="contact-form-name-input" placeholder="Name" class="contact-form-input" pattern="[a-zA-Z0-9\s]+" title="Please enter only letters and numbers." required="required">
-                </br>
-                <input type="email" id="contact-form-email-input" placeholder="Email" class="contact-form-input" required="required" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address.">
-                </br>
+                <input type="text" id="contact-form-name-input" placeholder="Name" class="contact-form-input"
+                       pattern="[a-zA-Z0-9\s]+" title="Please enter only letters and numbers." required="required">
+                <input type="email" id="contact-form-email-input" placeholder="Email" class="contact-form-input"
+                       required="required" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                       title="Please enter a valid email address.">
                 <textarea id="contact-form-message-input" placeholder="Message" class="contact-form-input"
                           style="height: 100px; width: 100%; resize: none; overflow: hidden; border: none; background-color: transparent; color: #4B5563;"
                           required="required"
-                          pattern="[a-zA-Z0-9\s]+"
-                          title="Please enter only letters and numbers."
                 ></textarea>
-                </br>
                 <button id="contact-form-submit-button" class="contact-form-submit-button">Submit</button>
             </form>
         </div>
@@ -116,7 +116,7 @@
         <div class="footer-div-2">
             <div class="footer-div-3">
                 <div class="footer-div-4">
-                    <img src="/images/favicon.png"
+                    <img src="images/favicon.png"
                          alt="Mama Mia logo">
                     <h4>Mama Mia</h4>
                     <p>

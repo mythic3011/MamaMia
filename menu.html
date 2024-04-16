@@ -1,79 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>MamaMia Bar | Menu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="revisit-after" content="1 month">
-    <meta name="rating" content="general">
-    <meta name="distribution" content="global">
-    <meta name="generator" content="WebStorm">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="revisit-after" content="1 month"/>
+    <meta name="rating" content="general"/>
+    <meta name="distribution" content="global"/>
+    <meta name="generator" content="WebStorm"/>
+    <meta name="theme-color" content="#ffffff"/>
     <!-- Primary Meta Tags -->
-    <meta name="language" content="English">
-    <meta name="title" content="MamaMia Bar">
-    <meta name="description"
-          content="MamaMia Bar is a bar in the city of New York. It is a place where people can enjoy a drink and a good time.">
-    <meta name="keywords" content="MamaMia Bar, New York, bar, drink, party, fun, people, New York City">
-    <meta name="author" content="MamaMia Bar">
+    <meta name="language" content="English"/>
+    <meta name="title" content="MamaMia Bar"/>
+    <meta
+            name="description"
+            content="MamaMia Bar is a bar in the city of New York. It is a place where people can enjoy a drink and a good time."
+    />
+    <meta
+            name="keywords"
+            content="MamaMia Bar, New York, bar, drink, party, fun, people, New York City"
+    />
+    <meta name="author" content="MamaMia Bar"/>
     <!-- SEO Meta Tags -->
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <meta name="robots" content="index, follow"/>
+    <meta name="googlebot" content="index, follow"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="images/favicon.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
     <!-- Multi-Language javascript on page -->
     <script src="js/multi-language.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/contact.js"></script>
     <!-- style.css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/Menu.css"/>
+
 </head>
 <body>
 <header class="header">
     <nav>
         <div class="header-div-1">
             <a href="index.html" class="header-div-a">
-                <img src="/images/favicon.png" class="header-div-a-img" alt="">
+                <img src="images/favicon.png" class="header-div-a-img" alt=""/>
             </a>
-            <div class="header-div-2"
-                 :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+            <div
+                    class="header-div-2"
+            >
                 <ul class="header-div-2-ul">
                     <li>
-                        <a id="navbar-home"
-                           href="index.html"
-                           class="header-div-2-ul-li-NotSelected">
-                            Home</a>
+                        <a
+                                id="navbar-home"
+                                href="index.html"
+                                class="header-div-2-ul-li-NotSelected"
+                        >
+                            Home</a
+                        >
                     </li>
                     <li>
-                        <a id="navbar-menu" href="menu.html"
-                           class="header-div-2-ul-li-Selected">Menu</a>
+                        <a
+                                id="navbar-menu"
+                                href="menu.html"
+                                class="header-div-2-ul-li-Selected"
+                        >Menu</a
+                        >
                     </li>
                     <li>
-                        <a id="navbar-about" href="about.html"
-                           class="header-div-2-ul-li-NotSelected">About</a>
+                        <a
+                                id="navbar-about"
+                                href="about.html"
+                                class="header-div-2-ul-li-NotSelected"
+                        >About</a
+                        >
                     </li>
                     <li>
-                        <a id="navbar-contact" href="contact.html"
-                           class="header-div-2-ul-li-NotSelected">Contact
-                            Us</a>
+                        <a
+                                id="navbar-contact"
+                                href="contact.html"
+                                class="header-div-2-ul-li-NotSelected"
+                        >Contact Us</a
+                        >
                     </li>
                 </ul>
             </div>
             <div class="header-language-select-div">
                 <!-- language svg -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                     class="bi bi-globe-americas" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"/>
-                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-globe-americas"
+                        viewBox="0 0 16 16"
+                >
+                    <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"
+                    />
+                    <path
+                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"
+                    />
                 </svg>
                 <span id="language-select">Language:</span>
                 <select id="language" onchange="changeLanguage(this)">
-                    <option id="language-select-en" value="en" selected>English</option>
+                    <option id="language-select-en" value="en" selected>
+                        English
+                    </option>
                     <option id="language-select-ja" value="ja">日本語</option>
-                    <option id="language-select-zh-hant" value="zh-hant">繁體中文</option>
-                    <option id="language-select-zh-hans" value="zh-hans">简体中文</option>
+                    <option id="language-select-zh-hant" value="zh-hant">
+                        繁體中文
+                    </option>
+                    <option id="language-select-zh-hans" value="zh-hans">
+                        简体中文
+                    </option>
                 </select>
             </div>
         </div>
@@ -84,137 +123,162 @@
         <h1 id="Menu-title">Featured Drink</h1>
         <div class="list-div">
             <div>
-                <img src="images/drink/drink1.png" alt="Drink 1">
+                <img src="images/drink/drink1.png" alt="Drink 1"/>
                 <h2 id="drink-1-title">Premium Coffee Blend</h2>
-                <p id="drink-1-description">Experience the rich flavor and aroma of our premium
-                    coffee blend. Made from carefully selected coffee beans, this blend offers a smooth and satisfying
-                    taste.</p>
-                <p id="drink-1-price" class="price">Price: $12.99</p>
-                <button id="drink-1-add-to-cart" >Add to
-                    Cart
-                </button>
+                <p id="drink-1-description">
+                    Indulge in the captivating allure of our meticulously crafted premium coffee blend.
+                    Immerse yourself in the rich, aromatic symphony that dances on your palate with every sip.
+                    Carefully handpicked coffee beans are expertly blended to perfection, resulting in a harmonious
+                    fusion of flavors.
+                    Delight in the smooth and satisfying taste that will awaken your senses and leave you craving for
+                    more.
+                </p>
             </div>
             <div>
-                <img src="images/drink/drink2.png" alt="Drink 2">
+                <img src="images/drink/drink2.png" alt="Drink 2"/>
                 <h2 id="drink-2-title">Handcrafted Cocktail Set</h2>
-                <p id="drink-2-description">Elevate your home bar with our handcrafted cocktail
-                    set. It includes a variety of premium spirits, mixers, and garnishes, allowing you to create
-                    delicious cocktails at home.</p>
-                <p id="drink-2-price" class="price">Price: $49.99</p>
-                <button id="drink-2-add-to-cart" >Add to
-                    Cart
-                </button>
+                <p id="drink-2-description">
+                    Elevate your home bar with our handcrafted cocktail set. It
+                    includes a variety of premium spirits, mixers, and garnishes,
+                    allowing you to create delicious cocktails at home.
+                </p>
             </div>
             <div>
-                <img src="images/drink/drink3.png" alt="Drink 3">
+                <img src="images/drink/drink3.png" alt="Drink 3"/>
                 <h2 id="drink-3-title">Artisanal Cheese Selection</h2>
-                <p id="drink-3-description">Indulge in our artisanal cheese selection, featuring
-                    a variety of handcrafted cheeses from local farms. Each cheese is carefully aged to perfection,
-                    offering a unique and flavorful experience.</p>
-                <p id="drink-3-price" class="price">Price: $19.99</p>
-                <button id="drink-3-add-to-cart" >Add to
-                    Cart
-                </button>
+                <p id="drink-3-description">
+                    Embark on a culinary journey and immerse yourself in the world of exceptional flavors with our
+                    meticulously curated artisanal cheese selection. Discover a symphony of tastes crafted by local
+                    farms, where passion and tradition converge. Each cheese is lovingly aged to perfection, resulting
+                    in a harmonious blend of textures and flavors that will captivate your palate. From creamy and mild
+                    to bold and robust, our selection offers a diverse range of cheeses that will elevate your cheese
+                    board experience to new heights. Indulge in this gastronomic delight and savor the essence of true
+                    craftsmanship.
+                </p>
             </div>
             <div>
-                <img src="images/drink/drink4.png" alt="Drink 4">
+                <img src="images/drink/drink4.png" alt="Drink 4"/>
                 <h2 id="drink-4-title">Mojito</h2>
-                <p id="drink-4-description">A classic cocktail made with rum, fresh mint, lime
-                    juice, sugar, and soda water.</p>
-                <p id="drink-4-price" class="price">Price: $8.50</p>
-                <button id="drink-4-add-to-cart" >Add to
-                    Cart
-                </button>
-
+                <p id="drink-4-description">
+                    Transport yourself to a world of timeless elegance with our iconic Mojito cocktail. Crafted with the
+                    finest rum, handpicked fresh mint leaves, zesty lime juice, a touch of sugar, and a splash of
+                    invigorating soda water, this classic libation is a symphony of refreshing flavors. Each sip
+                    tantalizes your taste buds with the perfect balance of sweetness, citrusy tang, and a hint of minty
+                    freshness. Whether you're lounging by the pool or enjoying a night out, let the Mojito be your
+                    passport to a moment of pure bliss and indulgence. Cheers to the art of cocktail perfection!
+                </p>
             </div>
             <div>
-                <img src="images/drink/drink5.png" alt="Drink 5">
+                <img src="images/drink/drink5.png" alt="Drink 5"/>
                 <h2 id="drink-5-title">Old Fashioned</h2>
-                <p id="drink-5-description">A timeless blend of bourbon, sugar, bitters, and a
-                    twist of orange zest.</p>
-                <p id="drink-5-price" class="price">Price: $10.00</p>
-                <button id="drink-5-add-to-cart" >Add to
-                    Cart
-                </button>
-
+                <p id="drink-5-description">
+                    Immerse yourself in the allure of the Old Fashioned cocktail, a timeless masterpiece that embodies
+                    sophistication and refinement. This classic blend harmoniously combines the richness of bourbon, the
+                    subtle sweetness of sugar, the complexity of bitters, and a tantalizing twist of orange zest. Every
+                    sip unveils a symphony of flavors, where the smoothness of bourbon intertwines with the aromatic
+                    essence of orange, creating a sensory experience that transcends time. Indulge in the elegance of
+                    this iconic cocktail and savor the perfect balance of tradition and modernity. Raise your glass to
+                    the enduring legacy of the Old Fashioned. Cheers!
+                </p>
             </div>
 
             <div>
-
-                <img src="images/drink/drink6.png" alt="Drink 6">
+                <img src="images/drink/drink6.png" alt="Drink 6"/>
                 <h2 id="drink-6-title">Cosmopolitan</h2>
-                <p id="drink-6-description">A vibrant mix of vodka, cranberry juice, orange
-                    liqueur, and lime juice.</p>
-                <p id="drink-6-price" class="price">Price: $9.50</p>
-                <button id="drink-6-add-to-cart" >Add to
-                    Cart
-                </button>
+                <p id="drink-6-description">
+                    Embrace the vibrant spirit of the Cosmopolitan cocktail, a delightful fusion of flavors that will
+                    ignite your senses. This captivating libation blends the smoothness of vodka with the tangy allure
+                    of cranberry juice, complemented by the subtle sweetness of orange liqueur and a refreshing twist of
+                    lime juice. Each sip unveils a symphony of taste, where the tartness of cranberry dances
+                    harmoniously with the citrusy notes, creating a perfectly balanced and invigorating concoction.
+                    Immerse yourself in the cosmopolitan lifestyle and let this iconic cocktail transport you to a world
+                    of sophistication and excitement. Cheers to the cosmopolitan experience!
+                </p>
             </div>
             <!-- Drink 7 -->
             <div>
-                <img src="images/drink/drink7.png" alt="Drink 7">
+                <img src="images/drink/drink7.png" alt="Drink 7"/>
                 <h2 id="drink-7-title">Manhattan</h2>
-                <p id="drink-7-description">A sophisticated mix of whiskey, sweet vermouth, and a
-                    dash of bitters.</p>
-                <p id="drink-7-price" class="price">Price: $11.50</p>
-                <button id="drink-7-add-to-cart" >Add to
-                    Cart
-                </button>
+                <p id="drink-7-description">
+                    Elevate your taste buds with the timeless sophistication of the Manhattan cocktail. This exquisite
+                    blend combines the rich complexity of whiskey, the velvety sweetness of sweet vermouth, and a dash
+                    of aromatic bitters. With each sip, you'll be captivated by the harmonious marriage of flavors,
+                    where the robustness of whiskey intertwines with the luscious notes of vermouth, while the bitters
+                    add a subtle yet tantalizing depth. Whether you're unwinding after a long day or celebrating a
+                    special occasion, the Manhattan cocktail is a symbol of refined taste and elegance. Immerse yourself
+                    in its allure and savor the art of cocktail craftsmanship. Cheers to the Manhattan!
+                </p>
             </div>
             <!-- Drink 8 -->
             <div>
-                <img src="images/drink/drink8.png" alt="Drink 8">
+                <img src="images/drink/drink8.png" alt="Drink 8"/>
                 <h2 id="drink-8-title">Sazerac</h2>
-                <p id="drink-8-description">A New Orleans classic made with rye whiskey, absinthe,
-                    sugar, and Peychaud's bitters.</p>
-                <p id="drink-8-price" class="price">Price: $12.00</p>
-                <button id="drink-8-add-to-cart" >Add to
-                    Cart
-                </button>
+                <p id="drink-8-description">
+                    Transport yourself to the vibrant streets of New Orleans with the iconic Sazerac cocktail. This
+                    classic libation, steeped in history and tradition, combines the boldness of rye whiskey, the
+                    enchanting essence of absinthe, a touch of sugar, and the aromatic allure of Peychaud's bitters.
+                    With each sip, you'll be immersed in a symphony of flavors, where the robustness of rye whiskey
+                    mingles with the subtle herbal notes of absinthe, while the sugar and bitters add a perfect balance
+                    of sweetness and complexity. Indulge in the timeless charm of the Sazerac cocktail and let its rich
+                    heritage captivate your senses. Cheers to the spirit of New Orleans!
+                </p>
             </div>
             <!-- Drink 9 -->
             <div>
-                <img src="images/drink/drink9.png" alt="Drink 9">
+                <img src="images/drink/drink9.png" alt="Drink 9"/>
                 <h2 id="drink-9-title">Gin and Tonic</h2>
-                <p id="drink-9-description" class="text-gray-600">A refreshing combination of gin, tonic water, and a
-                    squeeze of fresh lime.</p>
-                <p id="drink-9-price" class="price">Price: $7.50</p>
-                <button id="drink-9-add-to-cart" >Add to
-                    Cart
-                </button>
+                <p id="drink-9-description" class="text-gray-600">
+                    Quench your thirst with the timeless allure of the Gin and Tonic cocktail. This refreshing libation
+                    combines the crispness of gin, the effervescence of tonic water, and a vibrant squeeze of fresh
+                    lime. With each sip, you'll be greeted by a harmonious fusion of flavors, where the botanical notes
+                    of gin intertwine with the subtle bitterness of tonic water, while the zesty lime adds a burst of
+                    citrusy freshness. Whether you're lounging on a sunny day or enjoying a night out, the Gin and Tonic
+                    is the perfect companion for moments of relaxation and indulgence. Raise your glass and celebrate
+                    the simple yet exquisite pleasure of this classic cocktail. Cheers!
+                </p>
             </div>
             <!-- Drink 10 -->
             <div>
-                <img src="images/drink/drink10.png" alt="Drink 10">
+                <img src="images/drink/drink10.png" alt="Drink 10"/>
                 <h2 id="drink-10-title">Daiquiri</h2>
-                <p id="drink-10-description">A simple yet delicious blend of rum, lime juice, and
-                    sugar.</p>
-                <p id="drink-10-price" class="price">Price: $8.00</p>
-                <button id="drink-10-add-to-cart" >Add to
-                    Cart
-                </button>
+                <p id="drink-10-description">
+                    Immerse yourself in the refreshing simplicity of the Daiquiri cocktail, a timeless blend of rum,
+                    lime juice, and sugar that will transport you to a tropical paradise. This classic libation is the
+                    ultimate summer drink, offering a refreshing and invigorating experience. Each sip tantalizes your
+                    taste buds with the perfect balance of sweetness and tanginess, where the smoothness of rum blends
+                    harmoniously with the zesty lime and sugar. For an extra touch of freshness, garnish with a slice of
+                    lemon or a sprig of mint. Indulge in the simple pleasures of the Daiquiri and let its tropical charm
+                    transport you to a moment of pure bliss and relaxation. Cheers to the perfect summer drink!
+
+                </p>
             </div>
             <!-- Drink 11 -->
             <div>
-                <img src="images/drink/drink11.png" alt="Drink 11">
+                <img src="images/drink/drink11.png" alt="Drink 11"/>
                 <h2 id="drink-11-title">Whiskey Sour</h2>
-                <p id="drink-11-description">A tangy mix of whiskey, lemon juice, and a touch of
-                    sweetness.</p>
-                <p id="drink-11-price" class="price">Price: $9.00</p>
-                <button id="drink-11-add-to-cart" >Add to
-                    Cart
-                </button>
+                <p id="drink-11-description">Experience the perfect balance of tanginess and sweetness with the Whiskey
+                    Sour cocktail. This delightful libation combines the robustness of whiskey, the zesty tang of lemon
+                    juice, and a touch of sweetness to create a harmonious blend of flavors. Each sip reveals a symphony
+                    of taste, where the richness of whiskey intertwines with the refreshing citrus notes of lemon juice,
+                    while the touch of sweetness adds a delightful contrast. Whether you're unwinding after a long day
+                    or enjoying a social gathering, the Whiskey Sour is a timeless classic that never fails to please.
+                    Raise your glass and savor the tangy delight of this beloved cocktail. Cheers!
+                </p>
             </div>
             <!-- Drink 12 -->
             <div>
-                <img src="images/drink/drink12.png" alt="Drink 12">
+                <img src="images/drink/drink12.png" alt="Drink 12"/>
                 <h2 id="drink-12-title">Martini</h2>
-                <p id="drink-12-description">A classic cocktail made with gin (or vodka) and a
-                    hint of dry vermouth, garnished with an olive or lemon twist.</p>
-                <p id="drink-12-price" class="price">Price: $10.50</p>
-                <button id="drink-12-add-to-cart" >Add to
-                    Cart
-                </button>
+                <p id="drink-12-description">
+                    Step into the world of timeless elegance with the iconic Martini cocktail. This classic libation,
+                    made with either gin or vodka, and a hint of dry vermouth, is a symbol of sophistication and
+                    refinement. Each sip unveils a harmonious fusion of flavors, where the smoothness of the spirit
+                    intertwines with the subtle herbal notes of vermouth, creating a drink that is both smooth and
+                    complex. To garnish, you can choose between the traditional olive or a twist of lemon, adding a
+                    touch of visual appeal and a hint of citrusy freshness. Whether you prefer it shaken or stirred, the
+                    Martini is a symbol of timeless allure and a perfect choice for any occasion. Raise your glass and
+                    celebrate the elegance of this classic cocktail. Cheers!
+                </p>
             </div>
         </div>
     </div>
@@ -224,24 +288,20 @@
         <div class="footer-div-2">
             <div class="footer-div-3">
                 <div class="footer-div-4">
-                    <img src="/images/favicon.png"
-                         alt="Mama Mia logo">
+                    <img src="images/favicon.png" alt="Mama Mia logo"/>
                     <h4>Mama Mia</h4>
                     <p>
-                        <span id="address">
-                        New York, NY<br>
-                            </span>
-                        <br>
-                        <strong id="phone">Phone:</strong> +1 (202) 555-0123<br>
-                        <strong id="email">Email:</strong> me@mamamia.com<br>
-                        <strong id="website">Website:</strong> <a href="https://mamamia.com">mamamia.com</a>
+                        <span id="address"> New York, NY<br/> </span>
+                        <br/>
+                        <strong id="phone">Phone:</strong> +1 (202) 555-0123<br/>
+                        <strong id="email">Email:</strong> me@mamamia.com<br/>
+                        <strong id="website">Website:</strong>
+                        <a href="https://mamamia.com">mamamia.com</a>
                     </p>
                 </div>
                 <div class="footer-useful-links-div">
                     <div>
-                        <h4 id="useful-links">
-                            Useful Links
-                        </h4>
+                        <h4 id="useful-links">Useful Links</h4>
                         <ul>
                             <li>
                                 <a href="index.html" id="home">Home</a>
@@ -260,13 +320,8 @@
                 </div>
                 <form>
                     <label>
-                        <input type="email"
-                               placeholder="example@example.com">
-                        <button
-                                id="newsletter-subscribe"
-                        >
-                            Subscribe
-                        </button>
+                        <input type="email" placeholder="example@example.com"/>
+                        <button id="newsletter-subscribe">Subscribe</button>
                     </label>
                 </form>
             </div>

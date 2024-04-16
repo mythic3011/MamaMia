@@ -39,10 +39,26 @@ window.addEventListener('scroll', () => {
     const clipPathPercentage = 175 + (125 * (scrollPercentage / 100));
     secondSectionFixed.style.clipPath = `ellipse(220% 200% at 50% ${clipPathPercentage}%)`;
 
+    // Third section animations and show footer when scrolled to the bottom
+    const thirdSectionFixed = document.querySelector('section:nth-of-type(3) .fixed');
+    const footer = document.querySelector("footer");
     if (scrollPercentage <= 100) {
-        const scale = 5 - (4 * (scrollPercentage / 100));
-        secondSectionImage.style.transform = `scale(${scale})`;
+        footer.style.opacity = 1 - (1 * (scrollPercentage / 100));
+        let footer = document.querySelector("footer");
+        footer.style.opacity = 1 - (1 * (scrollPercentage / 100));
     }
+    if (scrollPercentage <= 100) {
+        thirdSectionFixed.style.transform = `scale(${scale})`;
+        let footer = document.querySelector("footer");
+        footer.style.opacity = 1 - (1 * (scrollPercentage / 100));
+    }
+
+    // if (scrollPercentage <= 100) {
+    //     const scale = 5 - (4 * (scrollPercentage / 100));
+    //     secondSectionImage.style.transform = `scale(${scale})`;
+    //     thirdSectionFixed.style.transform = `scale(${scale})`;
+    // }
+
 });
 
 // Retrieve the saved language from local storage

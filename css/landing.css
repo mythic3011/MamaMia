@@ -487,27 +487,6 @@ section:nth-of-type(2) article:nth-of-type(3) img {
     }
 }
 
-.btn:hover {
-    display: block;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 1rem;
-    border-radius: 0.5rem;
-    border-width: 2px;
-    border-color: transparent;
-    border-style: solid;
-    text-align: left;
-    text-align: center;
-    color: #ffffff;
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .btn:hover:after {
     display: block;
     padding-top: 0.5rem;
@@ -780,6 +759,16 @@ header nav > div > div > select {
             transition-duration: 300ms;
             transition-duration: 200ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 3.5rem;
+            font-weight: normal;
+        }
+
+        .h2 {
+            font-size: 3.5rem;
+            font-weight: normal;
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+            padding-left: 1rem;
         }
 
         @media (min-width: 640px) {
