@@ -152,15 +152,21 @@
                     />
                 </svg>
                 <span id="language-select">Language:</span>
-                <select id="language" onchange="changeLanguage(this)">
-                    <option id="language-select-en" value="en" selected>
+                <select class="lang-select" id="language" onchange="changeLanguage(this)"
+                        style="background: transparent; color: #000000; border: none; ">
+                    <option id="language-select-en" value="en" selected
+                            style="background: transparent; color: black;text-shadow: transparent; font-weight: lighter">
                         English
                     </option>
-                    <option id="language-select-ja" value="ja">日本語</option>
-                    <option id="language-select-zh-hant" value="zh-hant">
+                    <option id="language-select-ja" value="ja"
+                            style="background: transparent; color: black;text-shadow: transparent; font-weight: lighter">
+                    </option>
+                    <option id="language-select-zh-hant" value="zh-hant"
+                            style="background: transparent; color: black;text-shadow: transparent;font-weight: lighter">
                         繁體中文
                     </option>
-                    <option id="language-select-zh-hans" value="zh-hans">
+                    <option id="language-select-zh-hans" value="zh-hans"
+                            style="background: transparent; color: black;text-shadow: transparent;font-weight: lighter">
                         简体中文
                     </option>
                 </select>
@@ -317,7 +323,7 @@
             </div>
             <!-- Drink 12 -->
             <div>
-                <img src="images/drink/drink12.png" alt="Drink 12"/>
+                <img src="images/drink/drink12.png" alt="Drink 12" style="width: 100%; transform: ;"/>
                 <h2 id="drink-12-title">Martini</h2>
                 <p id="drink-12-description">
                     Step into the world of timeless elegance with the iconic Martini cocktail. This classic libation,
@@ -386,11 +392,13 @@
     </div>
     <div class="copyright-div">
         <div>
-            <p id="copyright">
-                Copyright © 2024
-                <a target="_blank" href="https://www.mamamia.com">Mama Mia</a>
-                All Rights Reserved.
-            </p>
+            <a href="https://mamamia.sl94.i.ng/">
+                <p id="copyright">
+                    Copyright © 2024
+                    Mama Mia
+                    All Rights Reserved.
+                </p>
+            </a>
         </div>
     </div>
 </footer>

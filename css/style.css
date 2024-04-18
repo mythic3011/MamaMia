@@ -56,6 +56,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-right: 1rem;
 
 
     @media (min-width: 1024px) {
@@ -96,6 +97,8 @@
     flex-direction: column;
     align-items: center;
     list-style-type: none;
+    margin-left: 8rem;
+    margin-right: 1rem;
 
     @media (min-width: 1024px) {
         flex-direction: row;
@@ -168,7 +171,6 @@ article-a:hover {
     padding-bottom: 0.25rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
     background-color: #10B981;
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     color: #ffffff;
@@ -196,6 +198,10 @@ article-a:hover {
     display: flex;
     align-items: center;
     padding-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+
 
     span {
         margin-left: 0.5rem;
@@ -251,6 +257,13 @@ article-a:hover {
     background: linear-gradient(90deg, rgba(167, 139, 250, 1) 0%, rgba(99, 102, 241, 1) 40%, rgba(236, 72, 153, 1) 76%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a78bfa", endColorstr="#ec4899", GradientType=1);
     color: #ffffff;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
 
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
@@ -260,13 +273,15 @@ article-a:hover {
 .footer-div-2 {
     margin-left: auto;
     margin-right: auto;
-    max-width: 80rem;
+    max-width: 140rem;
 }
 
 .footer-div-3 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2.5rem;
+    margin-bottom: 1.25rem;
+    padding-left: 5rem;
 
     input {
         padding: 0.5rem;
@@ -284,6 +299,10 @@ article-a:hover {
         background-color: #F59E0B;
         color: #ffffff;
         border-radius: 1rem;
+    }
+
+    label {
+        padding: 0.5rem;
 
     }
 }
@@ -318,7 +337,6 @@ article-a:hover {
         text-decoration: none;
         color: #F59E0B;
     }
-
 }
 
 .footer-useful-links-div {
@@ -372,6 +390,7 @@ article-a:hover {
     background-color: #111827;
     color: #6B7280;
     width: 100%;
+    margin-left: -2rem;
 
     div {
         width: 100%;
@@ -386,12 +405,12 @@ article-a:hover {
 
     a {
         text-decoration: none;
-        color: #ffffff;
+        color: #6B7280;
     }
 
     a:hover {
         text-decoration: none;
-        color: #F59E0B;
+        color: #6B7180;
     }
 }
 
@@ -406,12 +425,93 @@ body {
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
+    border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #888888;
+    border-radius: 0.5rem;
+
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+/* firefox scrollbar */
+@supports (scrollbar-width: thin) {
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 0.5rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888888;
+        border-radius: 0.5rem;
+
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-weight: 500;
+
+    a {
+        color: #ffffff;
+    }
+
+    a:hover {
+        color: #ffffff;
+    }
+}
+
+body.dark-theme p {
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+
+body.dark-theme .navbar,
+body.dark-theme .header,
+body.dark-theme .footer-div-1 {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-theme a {
+    color: #ffffff;
+}
+
+body.dark-theme .contact-form-input,
+body.dark-theme .contact-form-submit-button {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+body.dark-theme .footer-div-1 {
+    background: linear-gradient(90deg, rgba(99, 102, 241, 1) 0%, rgba(167, 139, 250, 1) 40%, rgba(236, 72, 153, 1) 76%);
+}
+
+body.dark-theme .copyright-div {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-theme .header-div-2-ul-li-NotSelected {
+    background-color: #333;
+}
+
+body.dark-theme .header-div-2-ul-li-Selected {
+    background-color: #10B981;
 }
