@@ -58,7 +58,6 @@ window.addEventListener('scroll', () => {
     //     secondSectionImage.style.transform = `scale(${scale})`;
     //     thirdSectionFixed.style.transform = `scale(${scale})`;
     // }
-
 });
 
 // Retrieve the saved language from local storage

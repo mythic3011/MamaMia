@@ -844,3 +844,18 @@ header nav > div > div > select {
 .Not-show-on-firefox {
     display: none;
 }
+
+.language-select-style {
+   
+   select{
+    background: transparent; 
+   color: white;
+   border: none";
+   }
+   option{
+                    background: transparent;
+                color: black;
+                text-shadow: transparent;
+                font-weight: lighter;
+   }
+}
